@@ -1,7 +1,0 @@
-{
-  "require": {
-    "microsoft/microsoft-graph": "^1.8",
-    "microsoft/microsoft-graph-beta": "^2.0.0-RC12",
-    "microsoft/microsoft-graph-core": "@RC"
-  }
-}
