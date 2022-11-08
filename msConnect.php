@@ -65,8 +65,10 @@
             $result = file_get_contents('https://graph.microsoft.com/v1.0/me/mailFolders/' . $this->folder . '/messages?$filter=isRead+ne+true', false, $this->context);
             break;
           case "SINCE" : 
-            // $d = strtotime($spilt[1]);
-            $result = file_get_contents('https://graph.microsoft.com/v1.0/me/mailFolders/' . $this->folder . '/messages?&filter=receivedDateTime ge 2019-12-15T21:01:15Z', false, $this->context);
+            $d = strtotime($spilt[1]);
+            $date=date_create($d);
+            date_format($date,'Y-m-dTHH:mm:ssZ');
+            $result = file_get_contents('https://graph.microsoft.com/v1.0/me/mailFolders/' . $this->folder . '/messages?&filter=receivedDateTime ge ' . $date, false, $this->context);
             break;
           default : break;
         }
