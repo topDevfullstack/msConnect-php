@@ -1,0 +1,8 @@
+{
+  "require": {
+  "league/oauth2-client": "^2.0",
+      "microsoft/microsoft-graph": "^1.0",
+      "guzzlehttp/guzzle": "~6.0",
+      "thenetworg/oauth2-azure": "^1.3"
+  }
+}
