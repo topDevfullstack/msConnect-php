@@ -1,7 +1,7 @@
 <?php
-$clientId = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx";
+$clientId = "";
 $clientSecret = "mysecret";
-$responseUri = "https%3A%2F%2Fmyserver.mycompany.com%2Fsugarcrmmaintest%2Fresponse.php";
+$responseUri = "https%3A%2F%eu.arithon.com%mail%authenticate.php";
 
 
 $postUrl = "/mycomp.onmicrosoft.com/oauth2/v2.0/token";
@@ -32,5 +32,3 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec($curl);
-
-?>
